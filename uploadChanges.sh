@@ -2,7 +2,7 @@
 
 #Git changes verification
 function verifyStatus {
-    CHANGED=$(git status --porcelain --untracked-files=no)
+    CHANGED=$(git status --porcelain)
 
     if [ -n "${CHANGED}" ]; then
         git add .
