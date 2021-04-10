@@ -14,7 +14,8 @@ function verifyStatus {
     fi
     
 }
-ls 
+
+#Client commit
 cd personalPortfolioClient || exit
 verifyStatus "Client"
 
