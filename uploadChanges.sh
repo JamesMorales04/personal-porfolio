@@ -3,7 +3,7 @@ echo "First arg: $1"
 echo "Second arg: $2"
 echo "Third arg: $3"
 
-if [[ $1 != NULL && $2 != NULL && $3 != NULL ]];
+if [[ $1 != "" && $2 != "" && $3 != "" ]];
 
 	then
 
@@ -27,7 +27,7 @@ if [[ $1 != NULL && $2 != NULL && $3 != NULL ]];
         git push
 
     else
-	  echo -e "2 parameters need to be entered:"
+	  echo -e "3 parameters need to be entered:"
       echo -e "1: Commit message for the client"
       echo -e "2: Commit message for the server"
       echo -e "3: Commit message for the big repo"
