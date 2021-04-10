@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Git changes verification
 function verifyStatus {
     CHANGED=$(git status --porcelain --untracked-files=no)
 
