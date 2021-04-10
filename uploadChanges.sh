@@ -1,13 +1,9 @@
 #!/bin/bash
 
 
-arg=0
-
 for arg in "$@"
 do
-    #"$arg"= "$arg" | tr "-" " "
     echo "$arg"
-    ++arg 
 done
 
 if [[ $1 != "" && $2 != "" && $3 != "" ]];
