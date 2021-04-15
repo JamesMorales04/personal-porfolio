@@ -2,7 +2,7 @@
 
 ## How to download sub-modules
 
-1. Execute "uploadChanges.sh".
+1. Execute "downloadSubModules.sh".
 2. If you have a problem with "downloadSubModules.sh" then clone each sub module individually.
 
 ## How to upload changes 
