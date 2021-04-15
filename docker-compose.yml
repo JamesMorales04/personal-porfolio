@@ -1,0 +1,26 @@
+version: "3.3"
+
+services:
+  personal-portfolio-server:
+    build:
+      context: ./personalPortfolioServer
+      dockerfile: dockerfile
+    ports:
+      - 8080:8080
+    env_file: ./personalPortfolioServer/.env
+
+
+  personal-portfolio-client:
+    build:
+      context: ./personalPortfolioClient
+      dockerfile: dockerfile
+    depends_on:
+      - personal-portfolio-server
+    ports:
+      - "3000:3000"
+
+volumes:
+  data-volume:
+  node_modules:
+  web-root:
+    driver: local

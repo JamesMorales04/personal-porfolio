@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Pull server changes
 cd personalPortfolioServer || exit
 git pull
